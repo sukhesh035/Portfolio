@@ -1,11 +1,16 @@
 .headerContent{
  color: white;
+opacity: 0.90;
 }
 .headerLinks{
-margin: 50px;
+ margin: 50px;
  color: white;
- font-size: 12px;
+ font-size: 15px;
+ transition: all 1s;
 }
 .headerLinks:hover{
  text-decoration: none;
+ opacity: 1;
+ color: aliceblue;
+ font-size: 20px;
 }
