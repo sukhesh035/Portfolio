@@ -1,4 +1,16 @@
-var app= angular.module("portfolio",[]);
+var app= angular.module("portfolio",['ui.router']);
+
+app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+
+  $urlRouterProvider.otherwise('/home');
+  $stateProvider
+    .state('home', {
+    url: '/home',
+    templateUrl: 'templates/home.html'
+
+  });
+
+}]);
 
 app.controller("MainContriller",function($scope){
   $scope.message = "Hi angular worked";
@@ -7,11 +19,7 @@ app.controller("MainContriller",function($scope){
 app.controller("headerController",function($scope){
   $scope.headerlist = [
     {
-      title : "Home",
-      link : ""
-    },
-    {
-      title : "My Work",
+      title : "About Me",
       link : ""
     },
     {
@@ -19,8 +27,15 @@ app.controller("headerController",function($scope){
       link : ""
     },
     {
-      title : "About Me",
+      title : "My Work",
       link : ""
-    }
+    },
+    {
+      title : "Home",
+      link : ""
+    },
+
+
+
   ];
 });
