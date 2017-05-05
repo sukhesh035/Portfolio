@@ -1,0 +1,11 @@
+.headerContent{
+ color: white;
+}
+.headerLinks{
+margin: 50px;
+ color: white;
+ font-size: 12px;
+}
+.headerLinks:hover{
+ text-decoration: none;
+}
