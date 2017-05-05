@@ -8,3 +8,7 @@ after_success:
     -firebase deploy --token $FIREBASE_TOKEN
 script:
     - ember test --server
+    deploy:
+  provider: firebase
+  token:
+    secure: "1/JD6jXOkblAoNM3dZ-F5Ay_Naw8-hIy06jk__tKLUv2R0f9pZznVQJeFcJGN4fTva"
