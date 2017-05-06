@@ -24,4 +24,5 @@ script:
   - echo 'Hello Firebase'
 
 after_success:
-  - firebase deploy --email ${FIREBASE_USERNAME} --password ${FIREBASE_PASSWORD}
+  - firebase deploy --token $FIREBASE_TOKEN
+  #--email ${FIREBASE_USERNAME} --password ${FIREBASE_PASSWORD}
