@@ -26,22 +26,22 @@ app.controller("aboutController",function($scope){
   $scope.skills = [
     {
       skill : "Javascript",
-      description : "HI",
+      description : "Good hands on experience",
       image : "images/68747470733a2f2f7261772e6769746875622e636f6d2f766f6f646f6f74696b69676f642f6c6f676f2e6a732f6d61737465722f6a732e706e67.png"
     },
     {
       skill : "HTML-5",
-      description : "HI",
+      description : "Good hands on experience",
       image : "images/HTML5_Logo_512.png"
     },
     {
       skill : "CSS-3",
-      description : "HI",
+      description : "Good hands on experience",
       image : "images/preview-css3logo.png"
     },
     {
       skill : "Angular JS",
-      description : "HI",
+      description : "Good hands on experience",
       image : "images/angularJS.png"
     }
     
