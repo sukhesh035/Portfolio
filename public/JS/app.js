@@ -63,7 +63,7 @@ app.controller("headerController",function($scope){
       link : ""
     },
     {
-      title : "My Home",
+      title : "Home",
       link : "home"
     },
 
