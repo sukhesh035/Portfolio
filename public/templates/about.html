@@ -3,15 +3,19 @@
   .skillBlock{
     display: inline-block;
     float: left;
+    background: white;
+    margin-right: 80px;
+    width: 210px;
+    height: 300px;
   }
 
 </style>
  
  
  <div class="container" ng-controller="aboutController">
-  <div class="row">
+  <div class="row" style="margin-top:100px;color:#676767">
     <div ng-repeat="element in skills" class="skillBlock">
-      <div>
+      <div class="col-lg-10">
         <h3>
           {{element.skill}}
         </h3>
