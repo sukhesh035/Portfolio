@@ -6,10 +6,22 @@ install:
     -npm install -g firebase-tools
 
 
-  provider: "firebase"
-  token:
-    secure: "1/JD6jXOkblAoNM3dZ-F5Ay_Naw8-hIy06jk__tKLUv2R0f9pZznVQJeFcJGN4fTva"
-    project: "portfolio"
+#  provider: "firebase"
+#  token:
+#    secure: "1/JD6jXOkblAoNM3dZ-F5Ay_Naw8-hIy06jk__tKLUv2R0f9pZznVQJeFcJGN4fTva"
+#    project: "portfolio"
+#    
+#    after_success:
+#    -firebase deploy --token $FIREBASE_TOKEN
+#    
+#    
     
-    after_success:
-    -firebase deploy --token $FIREBASE_TOKEN
+    
+    
+    
+
+script:
+  - echo 'Hello Firebase'
+
+after_success:
+  - firebase deploy --email ${FIREBASE_USERNAME} --password ${FIREBASE_PASSWORD}

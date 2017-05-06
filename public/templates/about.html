@@ -1,0 +1,16 @@
+
+<div class="container" ng-controller="aboutController">
+  <div class="row">
+    <div ng-repeat="element in skills">
+      <div>
+        <h3>
+          {{element.skill}}
+        </h3>
+        <p>
+          {{element.description}}
+        </p>
+        <img ng-src="{{element.image}}" alt="">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="CSS/header.css">
  <div class="headerContent" ng-controller="headerController">
  <nav >
-  <a class="pull-right headerLinks" href="" ng-repeat="item in headerlist">{{item.title}}</a>
+  <a class="pull-right headerLinks" ui-sref="{{item.link}}" ng-repeat="item in headerlist">{{item.title}}</a>
  </nav>
 </div>
