@@ -21,7 +21,6 @@ app.controller("MainContriller",function($scope){
   $scope.message = "Hi angular worked";
 });
 
-
 app.controller("aboutController",function($scope){
   $scope.skills = [
     {
@@ -43,8 +42,22 @@ app.controller("aboutController",function($scope){
       skill : "Angular JS",
       description : "Good hands on experience",
       image : "images/angularJS.png"
+    },
+    {
+      skill : "JQuery",
+      description : "Good hands on experience",
+      image : "images/angularJS.png"
+    },
+    {
+      skill : "Node JS",
+      description : "Good hands on experience",
+      image : "images/angularJS.png"
+    },
+    {
+      skill : "Express JS",
+      description : "Good hands on experience",
+      image : "images/angularJS.png"
     }
-    
   ];
 });
 
@@ -66,8 +79,6 @@ app.controller("headerController",function($scope){
       title : "Home",
       link : "home"
     },
-
-
 
   ];
 });
