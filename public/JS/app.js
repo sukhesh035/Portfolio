@@ -69,7 +69,7 @@ app.controller("headerController",function($scope){
     },
     {
       title : "Resume",
-      link : ""
+      link : "/images/teja.docx"
     },
     {
       title : "My Work",
